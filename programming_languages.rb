@@ -5,12 +5,12 @@ def reformat_languages(languages)
   new_hash = {}
   cur_style = []
   languages.collect do |style, style_data|
+    cur_style << style
     # binding.pry
     style_data.collect do |language, language_data|
       # binding.pry
       language_data.collect do |feature, feature_value|
       # binding.pry
-      cur_style << style
       new_hash[language] = {
         feature => feature_value,
         :style => cur_style
