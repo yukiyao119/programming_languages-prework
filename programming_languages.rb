@@ -13,7 +13,7 @@ def reformat_languages(languages)
       # binding.pry
       language_data.collect do |type, type_value|
         # binding.pry
-      feature_arr << feature
+        
       new_hash[language] = {
         type => type_value,
         :style => cur_style.last
