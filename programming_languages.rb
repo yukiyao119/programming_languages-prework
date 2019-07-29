@@ -6,7 +6,7 @@ def reformat_languages(languages)
   styles = languages.keys
   # binding.pry
   languages.collect do |style, feature_data|
-    binding.pry
+    # binding.pry
     cur_style[0] = style
     binding.pry
     feature_data.collect do |language, language_data|
