@@ -11,13 +11,13 @@ def reformat_languages(languages)
     cur_style << style
     feature_data.collect do |language, language_data|
       if language == :javascript
-        language_data = {
-          :style => []
-        }
+        language_data[:style] => [:oo, :functional]
+      else
+        language_data.collect do |type, type_value|
+        # binding.pry
       end 
       # binding.pry
-      language_data.collect do |type, type_value|
-        # binding.pry
+
         
       new_hash[language] = {
         type => type_value,
