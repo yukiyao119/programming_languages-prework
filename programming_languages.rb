@@ -5,7 +5,6 @@ def reformat_languages(languages)
   new_hash = {}
   # styles = languages.keys
   # binding.pry
-  cur_style = []
   languages.collect do |style, feature_data|
     # binding.pry
     cur_style[0] = style
