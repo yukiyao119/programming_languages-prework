@@ -8,23 +8,24 @@ def reformat_languages(languages)
   cur_style = []
   languages.collect do |style, feature_data|
     # binding.pry
-    cur_style << style
+    cur_style[0] = style
     feature_data.collect do |language, language_data|
       if language == :javascript
         language_data[:style] => [:oo, :functional]
       else
         language_data.collect do |type, type_value|
         # binding.pry
+      new_hash[language] = {
+        type => type_value,
+        :style => [style]
+      } 
+        
       end 
       # binding.pry
 
         
-      new_hash[language] = {
-        type => type_value,
-        :style => [style]
-      }
+
       # binding.pry
-      end 
     end 
   end
   new_hash
