@@ -15,7 +15,7 @@ def reformat_languages(languages)
       feature_arr << feature
       new_hash[language] = {
         type => type_value,
-        :style => feature.to_a
+        :style => feature_arr<< feature
       }
       # binding.pry
       end 
