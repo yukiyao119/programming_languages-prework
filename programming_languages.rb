@@ -4,8 +4,8 @@ def reformat_languages(languages)
   # your code here
   new_hash = {}
   feature_arr = []
-  # features = languages.keys
-  # binding.pry
+  features = languages.keys
+  binding.pry
   languages.collect do |feature, feature_data|
     # binding.pry
     feature_data.collect do |language, language_data|
@@ -15,7 +15,7 @@ def reformat_languages(languages)
       feature_arr << feature
       new_hash[language] = {
         type => type_value,
-        :style => feature_arr<< feature
+        :style => feature
       }
       # binding.pry
       end 
