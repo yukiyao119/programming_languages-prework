@@ -3,7 +3,6 @@ require 'pry'
 def reformat_languages(languages)
   # your code here
   new_hash = {}
-  feature_arr = []
   features = languages.keys
   # binding.pry
   languages.keys[0].collect do |feature_data|
