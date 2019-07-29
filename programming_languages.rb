@@ -10,6 +10,11 @@ def reformat_languages(languages)
     # binding.pry
     cur_style << style
     feature_data.collect do |language, language_data|
+      if language == :javascript
+        language_data = {
+          :style => []
+        }
+      end 
       # binding.pry
       language_data.collect do |type, type_value|
         # binding.pry
