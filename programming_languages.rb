@@ -15,9 +15,10 @@ def reformat_languages(languages)
         feature => feature_value,
         :style => cur_style
       } 
-      binding.pry
+      # binding.pry
       end
     end 
   end
   new_hash
+  binding.pry
 end
