@@ -7,15 +7,15 @@ def reformat_languages(languages)
   languages.collect do |feature, feature_data|
     # binding.pry
     feature_data.collect do |language, language_data|
-      binding.pry
+      # binding.pry
       language_data.collect do |type, type_value|
-        binding.pry
+        # binding.pry
       
       new_hash[language] = {
         type: type_value,
         :style: feature
       }
-      
+      binding.pry
       end 
     end 
   end
