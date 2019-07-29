@@ -13,7 +13,7 @@ def reformat_languages(languages)
         type => type_value,
         :style => feature
       }
-      # binding.pry
+      binding.pry
       end 
     end 
   end
