@@ -8,6 +8,7 @@ def reformat_languages(languages)
     # binding.pry
     cur_style = []
     style_data.collect do |language, language_data|
+      binding.pry
       language_data.collect do |feature, feature_value|
       # binding.pry
       new_hash[language] = {
