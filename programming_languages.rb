@@ -10,7 +10,12 @@ def reformat_languages(languages)
       binding.pry
       language_data.collect do |type, type_value|
         binding.pry
-        
+      
+      new_hash[language] = {
+        type: type_value,
+        :style: feature
+      }
+      
       end 
     end 
   end
