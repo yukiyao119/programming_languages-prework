@@ -13,7 +13,7 @@ def reformat_languages(languages)
       # binding.pry
       
       new_hash[language] = {
-        featire => feature_value,
+        feature => feature_value,
         :style => cur_style
       } 
       end
