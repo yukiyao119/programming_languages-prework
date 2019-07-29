@@ -3,15 +3,16 @@ require 'pry'
 def reformat_languages(languages)
   # your code here
   new_hash = {}
-  features = languages.keys
-  binding.pry
+  feature_arr = []
+  # features = languages.keys
+  # binding.pry
   languages.collect do |feature, feature_data|
     # binding.pry
-    feature_arr << feature
     feature_data.collect do |language, language_data|
       # binding.pry
       language_data.collect do |type, type_value|
         # binding.pry
+      feature_arr << feature
       new_hash[language] = {
         type => type_value,
         :style => feature_arr
