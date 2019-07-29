@@ -18,9 +18,7 @@ def reformat_languages(languages)
         :style => cur_style
       } 
       end
-      binding.pry
     end 
   end
   new_hash
-  binding.pry
 end
