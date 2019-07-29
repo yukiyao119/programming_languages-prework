@@ -19,7 +19,7 @@ def reformat_languages(languages)
           type => type_value,
           :style => [style]
         } 
-        
+        end
       end 
       # binding.pry
 
